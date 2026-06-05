@@ -938,11 +938,11 @@ ul {
   text-align: center;
 }
 .qr-item img {
-  width: 160px;
-  height: 160px;
+  width: 320px;
+  height: 320px;
   object-fit: contain;
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--color-white);
   padding: 8px;
   margin: 0 auto 10px;
@@ -954,10 +954,8 @@ ul {
   font-family: var(--font-heading);
 }
 
-@media (max-width: 640px) {
-  .booking-row {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 576px) {
+  .qr-img { width: 280px; height: 280px; }  /* ← 手机端 280×280 */
 }
 
 /* --- Insurance (Homepage Section) --- */
